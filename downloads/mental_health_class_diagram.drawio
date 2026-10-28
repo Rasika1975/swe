@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="mental-class" name="Class Diagram">
+    <mxGraphModel dx="1073" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="class_title" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=20;fontStyle=1;fontColor=#0f172a;" value="CLASS DIAGRAM — MENTAL HEALTH MANAGEMENT SYSTEM" vertex="1">
+          <mxGeometry height="38" width="780" x="160" y="12" as="geometry" />
+        </mxCell>
+        <mxCell id="class_user" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1.6;fontColor=#1e293b;fontSize=13;align=left;verticalAlign=top;spacing=0;" value="&lt;table cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;font-weight:bold;text-align:center;background-color:#dbeafe;border-bottom:1px solid #6c8ebf;&quot;&gt;User&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left;border-bottom:1px solid #6c8ebf;vertical-align:top;&quot;&gt;- userId: int&lt;br&gt;- name: String&lt;br&gt;- email: String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left;vertical-align:top;&quot;&gt;+ register()&lt;br&gt;+ login()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="180" width="250" x="390" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="class_resource" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1.6;fontColor=#1e293b;fontSize=13;align=left;verticalAlign=top;spacing=0;" value="&lt;table cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;font-weight:bold;text-align:center;background-color:#dbeafe;border-bottom:1px solid #6c8ebf;&quot;&gt;SelfCareResource&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left;border-bottom:1px solid #6c8ebf;vertical-align:top;&quot;&gt;- resourceId: int&lt;br&gt;- title: String&lt;br&gt;- category: String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left;vertical-align:top;&quot;&gt;+ viewResource()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="165" width="260" x="760" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="class_mood" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1.6;fontColor=#1e293b;fontSize=13;align=left;verticalAlign=top;spacing=0;" value="&lt;table cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;font-weight:bold;text-align:center;background-color:#dbeafe;border-bottom:1px solid #6c8ebf;&quot;&gt;MoodEntry&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left;border-bottom:1px solid #6c8ebf;vertical-align:top;&quot;&gt;- entryId: int&lt;br&gt;- date: Date&lt;br&gt;- moodLevel: String&lt;br&gt;- note: String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left;vertical-align:top;&quot;&gt;+ saveEntry()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="135" width="130" x="110" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="class_appt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1.6;fontColor=#1e293b;fontSize=13;align=left;verticalAlign=top;spacing=0;" value="&lt;table cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;font-weight:bold;text-align:center;background-color:#dbeafe;border-bottom:1px solid #6c8ebf;&quot;&gt;Appointment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left;border-bottom:1px solid #6c8ebf;vertical-align:top;&quot;&gt;- appointmentId: int&lt;br&gt;- dateTime: DateTime&lt;br&gt;- status: String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left;vertical-align:top;&quot;&gt;+ book()&lt;br&gt;+ cancel()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="145" width="137" x="390" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="class_counselor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1.6;fontColor=#1e293b;fontSize=13;align=left;verticalAlign=top;spacing=0;" value="&lt;table cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;font-weight:bold;text-align:center;background-color:#dbeafe;border-bottom:1px solid #6c8ebf;&quot;&gt;Counselor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left;border-bottom:1px solid #6c8ebf;vertical-align:top;&quot;&gt;- counselorId: int&lt;br&gt;- name: String&lt;br&gt;- specialization: String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left;vertical-align:top;&quot;&gt;+ viewAppointments()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="180" width="260" x="760" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_user_mood" edge="1" parent="1" source="class_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=1.5;startArrow=none;endArrow=none;" target="class_mood" value="creates mood entries">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_user_appt" edge="1" parent="1" source="class_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=1.5;startArrow=none;endArrow=none;" target="class_appt" value="books">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_user_resource" edge="1" parent="1" source="class_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=1.5;startArrow=none;endArrow=none;" target="class_resource" value="views">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_counselor_appt" edge="1" parent="1" source="class_counselor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748b;strokeWidth=1.5;startArrow=none;endArrow=none;" target="class_appt" value="handles">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mult_user_mood_a" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#475569;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="18" width="22" x="422" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="mult_user_mood_b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#475569;align=center;verticalAlign=middle;" value="0..*" vertex="1">
+          <mxGeometry height="18" width="44" x="265" y="343" as="geometry" />
+        </mxCell>
+        <mxCell id="mult_user_appt_a" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#475569;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="18" width="22" x="505" y="263" as="geometry" />
+        </mxCell>
+        <mxCell id="mult_user_appt_b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#475569;align=center;verticalAlign=middle;" value="0..*" vertex="1">
+          <mxGeometry height="18" width="44" x="505" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="mult_user_res_a" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#475569;align=center;verticalAlign=middle;" value="0..*" vertex="1">
+          <mxGeometry height="18" width="44" x="650" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="mult_user_res_b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#475569;align=center;verticalAlign=middle;" value="0..*" vertex="1">
+          <mxGeometry height="18" width="44" x="710" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="mult_counselor_appt_a" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#475569;align=center;verticalAlign=middle;" value="0..*" vertex="1">
+          <mxGeometry height="18" width="44" x="650" y="438" as="geometry" />
+        </mxCell>
+        <mxCell id="mult_counselor_appt_b" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#475569;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="18" width="22" x="728" y="438" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
